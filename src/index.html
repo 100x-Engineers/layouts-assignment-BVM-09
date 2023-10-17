@@ -3,10 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>100x</title>
-    <link href="../dist/output.css" rel="stylesheet" />
+    <title>100x-layout</title>
+    <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body>
-    <!-- Write your code here -->
+  <body class="bg-black font-inter">
+    <div class="flex-col md:flex-row flex h-screen w-screen flex-shrink-0 md:gap-28 items-center justify-center">
+      <div class="flex-col">
+        <section
+          class="justify-center items-center top-0 md:items-end gap-32 py-3 px-4 flex">
+          <img
+            src="../public/images/login-frame-27180.svg"
+            alt="100x-logo"
+            class="md:w-455 md:h-48 w-14 h-4"
+            />
+        </section>
+      </div>
+      <section
+        class="w-360 h-auto flex-col justify-start items-start px-7 gap-10 inline-flex  my-auto"
+      >
+        <div class="flex-col justify-start items-start gap-3 flex object-contain">
+          <h1
+            class="text-neutral-50 font-inter text-Fsb md:text-Fs whitespace-nowrap font-extrabold">
+            Happening now
+          </h1>
+          <h2 class="text-neutral-50 text-base leading-normal font-inter md:text-2xl font-normal">
+            Join today.
+          </h2>
+        </div>
+        <a href="./login/step-1.html">
+        <button
+          class="bg-neutral-50 flex justify-center text-neutral-1000 gap-2.5 w-334 rounded-65 self-stretch text-center font-bold shadow-btnShadow backdrop-blur-2xl px-6 py-2 hover:bg-neutral200 disabled:opacity-50"
+        >
+          Create account
+        </button>
+      </a>
+        <section class="w-80 h-5 justify-center items-center gap-1 inline-flex">
+          <span
+            class="grow shrink basis-0 h-px border border-neutral-700"
+          ></span>
+          <span class="text-center text-stone-50 text-base font-['Chirp']"
+            >or</span
+          >
+          <span
+            class="grow shrink basis-0 h-px border border-neutral-700"
+          ></span>
+        </section>
+        <section
+          class="self-stretch h-20 flex-col justify-start items-start gap-5 flex"
+        >
+          <p class="text-stone-50 md:text-xl font-medium font-inter">
+            Already have an account?
+          </p>
+
+          <a href="">
+          <button
+            class="w-80 h-9 px-6 py-2 rounded-65 shadow-3xl border  border-twitterblue border-opacity-25 backdrop-blur-23 justify-center items-center gap-2.5 inline-flex text-twitterblue"
+          >
+            Sign up
+          </button></a>
+        </section>
+      </section>
+    </div>
   </body>
 </html>

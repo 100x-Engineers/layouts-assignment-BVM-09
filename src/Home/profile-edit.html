@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css" />
+    <title>Document</title>
+</head>
+<body class="bg-neutral-1000">
+    <header class="flex self-stretch py-3 px-4 items-center justify-between">
+        <div class="flex gap-5">
+            <a href="./profile.html">
+                <img src="../../public/images/profile-edit-1-arrow-left.svg" alt="back">
+            </a>
+            <h2 class="font-inter text-base font-bold text-neutral-50">Edit profile</h2>
+        </div>
+        <a href="./profile.html">
+            <button class="w-20 rounded-30 px-5 py-2 hover:bg-neutral-200 font-bold text-center text-neutral-1000 bg-neutral-50 disabled:opacity-50 backdrop-blur-23">Save</button>
+        </a>
+    </header>
+    <section class="inline-flex flex-col items-end justify-center gap-2 pb-3 ">
+        <div class="relative self-stretch">
+            <div class="absolute flex justify-center items-center gap-4 bg-transparent cursor-pointer top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60 ">
+                <img src="../../public/images/profile-edit-1-material-symbols-add-a-photo-outline.svg" alt="photo icon" class="cursor-pointer bg-neutral-900 p-2 rounded-full">
+                <img src="../../public/images/profile-edit-1-x.svg" class="cursor-pointer bg-neutral-900 p-2 rounded-full">
+            </div>
+            <img src="../../public/images/image-17.png" alt="banner" class="w-screen h-52">
+        </div>
+        <div class="absolute top-36 left-4 translate-y-1/2">
+            <img src="../../public/images/profile-edit-1-user-avatar.svg" alt="user avatar" class="w-24 h-24 rounded-full border-1 border-neutral-1000 "/>
+            <img src="../../public/images/profile-edit-1-material-symbols-add-a-photo-outline.svg" alt="photo icon" class="cursor-pointer bg-neutral-900 p-2 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60 "> 
+        </div>
+    </section>
+    <main class="flex flex-col px-4 py-3 gap-4">
+        <div class="relative">
+           <input type="text" id="name" class="block w-full text-sm px-3 pb-2.5 pt-4 outline-none bg-neutral-1000 text-neutral-800 rounded-md border-2 border-solid border-neutral-500 appearance-none dark:text-neutral-50 dark:border-neutral-600 dark:focus:border-twitterblue focus:outline-none focus:ring-0 focus:border-twitterblue_for_hover peer/name" placeholder=" " value="aarushe reddy">
+           <label for="name" class="absolute text-neutral-800 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-neutral-1000 px-2 peer-focus/name:px-2 peer-focus/name:text-twitterblue peer-focus/name:dark:text-twitterblue peer-placeholder-shown/name:scale-100 peer-placeholder-shown/name:-translate-y-1/2 peer-placeholder-shown/name:top-1/2 peer-focus/name:top-2 peer-focus/name:scale-75 peer-focus/name:-translate-y-4 left-1 dark:text-neutral-50">Name
+        </div>
+        <div class="relative">
+            <textarea name="bio" id="bio" cols="40" rows="4" class="block w-full text-sm px-3 pb-2.5 pt-4 outline-none bg-neutral-1000 text-neutral-800 rounded-md border-2 border-solid border-neutral-500 appearance-none dark:text-neutral-50 dark:border-neutral-600  dark:focus:border-twitterblue focus:outline-none focus:ring-0 focus:border-twitterblue_for_hover peer/name" placeholder="">Digital Goodies Team - Web & Mobile UI/UX development; Graphics; Illustrations
+            </textarea>
+            <label class="absolute text-neutral-800 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-neutral-1000 px-2 peer-focus/name:px-2 peer-focus/name:text-twitterblue peer-focus/name:dark:text-twitterblue peer-placeholder-shown/name:scale-100 peer-placeholder-shown/name:-translate-y-1/2 peer-placeholder-shown/name:top-1/2 peer-focus/name:top-2 peer-focus/name:scale-75 peer-focus/name:-translate-y-4 left-1 dark:text-neutral-50">Bio</label>
+        </div>
+        <section class="relative">
+            <input
+              type="text"
+              id="location"
+              class="block px-3 pb-2.5 pt-4 w-full text-sm outline-none text-gray-900 bg-black rounded-md border-2 border-solid border-neutral500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer/name"
+              placeholder=" "
+            />
+            <label
+              for="location"
+              class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-black px-2 peer-focus/name:px-2 peer-focus/name:text-blue-600 peer-focus/name:dark:text-blue-500 peer-placeholder-shown/name:scale-100 peer-placeholder-shown/name:-translate-y-1/2 peer-placeholder-shown/name:top-1/2 peer-focus/name:top-2 peer-focus/name:scale-75 peer-focus/name:-translate-y-4 left-1"
+              >Location</label
+            >
+          </section>
+          <section class="relative">
+            <input
+              type="text"
+              id="website"
+              class="block px-3 pb-2.5 pt-4 w-full text-sm outline-none text-gray-900 bg-black rounded-md border-2 border-solid border-neutral500 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer/name"
+              placeholder=" "
+            />
+            <label
+              for="website"
+              class="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-black px-2 peer-focus/name:px-2 peer-focus/name:text-blue-600 peer-focus/name:dark:text-blue-500 peer-placeholder-shown/name:scale-100 peer-placeholder-shown/name:-translate-y-1/2 peer-placeholder-shown/name:top-1/2 peer-focus/name:top-2 peer-focus/name:scale-75 peer-focus/name:-translate-y-4 left-1"
+              >Website</label
+            >
+          </section>
+    </main>
+</body>
+</html>
